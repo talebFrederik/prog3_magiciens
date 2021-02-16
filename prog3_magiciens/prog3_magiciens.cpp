@@ -69,7 +69,7 @@ int main()
             ennemi.changerBaton(sortsAttaque, sortsDefense);
         }
 
-        jouer = !(joueur.isMort() || ennemi.isMort());
+        jouer ? !(joueur.isMort() || ennemi.isMort()): jouer;
 
         if (joueur.isMort())
         {
